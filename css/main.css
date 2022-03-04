@@ -9,6 +9,9 @@ body {
 img {
     display: block;
 }
+a {
+    text-decoration: none;
+}
 
 
 /* HEADER */
@@ -29,4 +32,46 @@ header .logo {
     bottom: 0;
     left: 0;
     margin: auto 0;
+    display: none;
+}
+header .sub-menu {
+
+}
+header .sub-menu ul.menu {
+    font-family: Arial, sans-serif;
+    display: flex;
+}
+header .sub-menu ul.menu li {
+    position: relative;
+}
+header .sub-menu ul.menu li::before {
+    content: "";
+    background-color: #e5e5e5;
+    width: 1px;
+    height: 12px;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    margin: auto;
+}
+header .sub-menu ul.menu li:first-child:before {
+    display: none;
+}
+header .sub-menu ul.menu li a {
+    padding: 11px 16px;
+    color: #656565;
+    display: block;
+    font-size: 12px;
+}
+header .sub-menu ul.menu li a:hover {
+    color: #000;
+}
+header .sub-menu .search {
+
+}
+header .sub-menu .search input {
+    
+}
+header .sub-menu .search .material-icons {
+    
 }
