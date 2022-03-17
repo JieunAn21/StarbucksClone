@@ -40,3 +40,10 @@ fadeInEls.forEach(function (fadeInEl, index) {
         opacity: 1
     });
 });
+
+
+const swiper = new Swiper('.notice .swiper-container', {
+    direction: 'vertical',
+    autoplay: true,
+    loop: true
+});
